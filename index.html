@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>सोमिरन</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="#" class="link">सोमिरन</a>
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <img
+          style="border-radius: 50%; height: 220px"
+          src="./profilepic.jpg"
+          alt="profilepic"
+        />
+        <h1>Hi, I am <span class="about__name">Somiran Ghose.</span></h1>
+        <h2 class="about__role">A Software Enginner.</h2>
+        <p class="about__desc">
+          As a self-taught programmer who believes in lifelong learning, I am
+          very passionate about being a web developer, especially when it
+          involves working with Django and Python. This combination allows me to
+          blend my creativity with my technical skills, enabling me to bring
+          ideas to life in the digital realm. I love the process of turning a
+          concept or design into a fully functional application, carefully
+          crafting the user experience and ensuring that every element works
+          seamlessly together with Django and Python.
+        </p>
+
+        <div class="about__contact center">
+          <a href="#" target="_blank">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/Somiran2"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/somiran-ghose/"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Web Scrapping using BS4 in python</h3>
+            <p class="project__description">
+              It’s using a python library that’s BS4 we scrape top 30 repos from
+              git hub and dump it into a csv file. Features: It’s dynamic with
+              the website update and also robust.
+            </p>
+            <p></p>
+            <ul class="project__stack">
+              <li class="project__stack-item">BS4</li>
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">NumPy</li>
+              <li class="project__stack-item">CSV</li>
+              <li class="project__stack-item">WebScrapping</li>
+            </ul>
+
+            <!-- <a
+              href="https://github.com/keshavgupta848101/screenshot-web-app-ejs"
+              aria-label="source code"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://screen-shot-snipet-v1.onrender.com/"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+
+          <div class="project">
+            <h3>Edith Discord BOT:</h3>
+            <p class="project__description">
+              Edith Discord Bot uses API from Discord a web app used for gamers
+              as a communication app this bot helps in moderation , music ,
+              greeting new users who join server and also available 24*7.
+              <!-- Features are like
+              Create forms, store them in the mongodb, view user data in real
+              time. -->
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">HTML</li>
+            </ul>
+
+            <!-- <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+
+          <div class="project">
+            <h3>Simple AI Model using Chat GPT API</h3>
+            <p class="project__description">
+              It’s a BOT that uses Chat GPT’s API to get real-time response.
+              Python, API, speech recognition. Collect real time data over voice
+              or text and response like human. Features: Ask anything and the
+              bot will be answering real-time.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Chat GPT API</li>
+              <li class="project__stack-item">Voice recognition</li>
+            </ul>
+
+            <!-- <a
+              href="https://github.com/keshavgupta848101/Quizapp_React"
+              aria-label="source code"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://react-quizzzzzz-keshavgupta.netlify.app/"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">Django</li>
+          <li class="skills__list-item btn btn--plain">Oracle Sql</li>
+          <li class="skills__list-item btn btn--plain">C</li>
+          <li class="skills__list-item btn btn--plain">Github</li>
+          <li class="skills__list-item btn btn--plain">Flask</li>
+          <li class="skills__list-item btn btn--plain">Linux</li>
+          <li class="skills__list-item btn btn--plain">SSH</li>
+          <li class="skills__list-item btn btn--plain">AWS</li>
+          <li class="skills__list-item btn btn--plain">HTML</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:somiranghose01@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="https://github.com/Somiran2" class="link footer__link">
+        @Somiran Ghose
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
